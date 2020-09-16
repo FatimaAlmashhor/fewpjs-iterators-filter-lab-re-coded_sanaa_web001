@@ -1,6 +1,6 @@
 // Code your solution here
 function findMatching(arr  , name){
-   return arr.filter(e =>{ return (e === name)})
+   return arr.filter(e =>{ return (e.toLowerCase() === name.toLowerCase())})
 }
   const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
 
