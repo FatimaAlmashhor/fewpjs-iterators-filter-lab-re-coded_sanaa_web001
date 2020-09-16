@@ -11,11 +11,12 @@ function findMatching(arr  , name){
    findMatching(['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby'], 'Bobby')
 
     findMatching(drivers, 'Susan')
+    // -----------------------------------------
 
-    function fuzzyMatch(){
-      const drivers = [];
-        drivers.length = 0;
-      drivers.push('Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby');
+    function fuzzyMatch(arr  , name){
+      return arr.filter(e => {
+        if(e[0].toLowerCase() === name[0].toLowerCase())
+      })
     }
 
     fuzzyMatch(drivers, 'Sa');
