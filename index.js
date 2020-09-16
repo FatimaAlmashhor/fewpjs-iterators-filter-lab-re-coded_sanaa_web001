@@ -24,7 +24,7 @@ function findMatching(arr  , name){
     fuzzyMatch(drivers, 'mm')
 
 function matchName(arr , obj){
-  return   arr.fiter(e =>{
+  return   arr.filter(e =>{
     return (e.name === obj)
   })
 }
@@ -48,6 +48,7 @@ matchName( [
           hometown: 'Tampa Bay' }
       ]
 , 'Bobby')
+
 
   //   it('returns a driver if beginning provided letters match', function () {
   //     expect(fuzzyMatch(drivers, 'Sa')).to.have.members(['Sammy', 'Sarah', 'Sally']);
