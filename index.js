@@ -15,7 +15,7 @@ function findMatching(arr  , name){
 
     function fuzzyMatch(arr  , name){
       return arr.filter(e => {
-        if(e[0].toLowerCase() === name[0].toLowerCase())
+        if(e[0].toLowerCase() === name[0].toLowerCase()) return e ;
       })
     }
 
