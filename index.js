@@ -1,23 +1,23 @@
 // Code your solution here
 function findMatching(arr  , name){
-   return arr.filter(e =>{ return (e === name)}) 
+   return arr.filter(e =>{ return (e === name)})
 }
   const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
 
     findMatching(drivers, 'Bobby');
     findMatching(drivers, 'Sammy');
-    
-   
+
+
    findMatching(['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby'], 'Bobby')
-    
+
     findMatching(drivers, 'Susan')
-    
+
     function fuzzyMatch(){
       const drivers = [];
         drivers.length = 0;
       drivers.push('Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'bobby');
     }
-    
+
     fuzzyMatch(drivers, 'Sa');
     fuzzyMatch(drivers, 'y');
     fuzzyMatch(drivers, 'mm')
